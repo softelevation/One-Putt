@@ -17,6 +17,8 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
+import RNExitApp from 'react-native-exit-app';
+
 const HomeScreen = ({navigation}) => {
   const dialog = () => {
     Alert.alert(
@@ -28,7 +30,7 @@ const HomeScreen = ({navigation}) => {
           onPress: () => {},
           style: 'cancel',
         },
-        {text: 'Yes', onPress: () => BackHandler.exitApp()},
+        {text: 'Yes', onPress: () => RNExitApp.exitApp()},
       ],
       {cancelable: false},
     );
