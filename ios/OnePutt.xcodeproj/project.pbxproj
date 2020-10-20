@@ -11,15 +11,16 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2BD7DB4921A6D23EE5E84BFD /* libPods-OnePutt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CDBCE44B2389E5075D9B993 /* libPods-OnePutt.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* OnePuttTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* OnePuttTests.m */; };
-		69C9A1068EA13142AC007328 /* libPods-OnePutt-OnePuttTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E2253EABCB523C52C33CE3 /* libPods-OnePutt-OnePuttTests.a */; };
+		4329F9615C5EFE4F5A824D9B /* libPods-OnePutt-OnePuttTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A30FC3C1FEE42BD76448501 /* libPods-OnePutt-OnePuttTests.a */; };
+		54C4508CF99A70408E9267A3 /* libPods-OnePutt-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E63F80D26F9515DDD7473263 /* libPods-OnePutt-tvOSTests.a */; };
+		6034437A7F6EB592DAF5C29C /* libPods-OnePutt-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 608E2EEF8C834E0262272A15 /* libPods-OnePutt-tvOS.a */; };
+		652267D89AC8967E0BB38183 /* libPods-OnePutt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE9BE851A44F137D1FEE0561 /* libPods-OnePutt.a */; };
+		7C68B635253DA89F0090A53F /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C68B634253DA89F0090A53F /* ExternalAccessory.framework */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		8D4A66CD47F1565C5E916CD6 /* libPods-OnePutt-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2083ADD5D5B07702379F40 /* libPods-OnePutt-tvOS.a */; };
-		D915879A4B552041A6E05950 /* libPods-OnePutt-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74464C374A044CE511A4EFA0 /* libPods-OnePutt-tvOSTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,29 +45,31 @@
 		00E356EE1AD99517003FC87E /* OnePuttTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnePuttTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* OnePuttTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnePuttTests.m; sourceTree = "<group>"; };
-		0F974E271949C5931CE969CF /* Pods-OnePutt-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnePutt-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-OnePutt-tvOS/Pods-OnePutt-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		126BE3CBF892DA18AD2E46F7 /* Pods-OnePutt-OnePuttTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnePutt-OnePuttTests.debug.xcconfig"; path = "Target Support Files/Pods-OnePutt-OnePuttTests/Pods-OnePutt-OnePuttTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0A30FC3C1FEE42BD76448501 /* libPods-OnePutt-OnePuttTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OnePutt-OnePuttTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* OnePutt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnePutt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = OnePutt/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = OnePutt/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = OnePutt/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = OnePutt/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = OnePutt/main.m; sourceTree = "<group>"; };
+		198EC07AE4D578A2C9C37C05 /* Pods-OnePutt-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnePutt-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-OnePutt-tvOSTests/Pods-OnePutt-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		2A155B94DAF3CAE1BDF62ECF /* Pods-OnePutt-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnePutt-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-OnePutt-tvOSTests/Pods-OnePutt-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2AAB07E46F880EEE18AC1D39 /* Pods-OnePutt-OnePuttTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnePutt-OnePuttTests.debug.xcconfig"; path = "Target Support Files/Pods-OnePutt-OnePuttTests/Pods-OnePutt-OnePuttTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* OnePutt-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OnePutt-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* OnePutt-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OnePutt-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4390758C9F71946E08F04D45 /* Pods-OnePutt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnePutt.release.xcconfig"; path = "Target Support Files/Pods-OnePutt/Pods-OnePutt.release.xcconfig"; sourceTree = "<group>"; };
-		62544B8148A5951CBA69D975 /* Pods-OnePutt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnePutt.debug.xcconfig"; path = "Target Support Files/Pods-OnePutt/Pods-OnePutt.debug.xcconfig"; sourceTree = "<group>"; };
-		63E2253EABCB523C52C33CE3 /* libPods-OnePutt-OnePuttTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OnePutt-OnePuttTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		74464C374A044CE511A4EFA0 /* libPods-OnePutt-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OnePutt-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3675C710C2D7B29802FCB4E9 /* Pods-OnePutt-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnePutt-tvOS.release.xcconfig"; path = "Target Support Files/Pods-OnePutt-tvOS/Pods-OnePutt-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		608E2EEF8C834E0262272A15 /* libPods-OnePutt-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OnePutt-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C68B633253DA89E0090A53F /* OnePutt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = OnePutt.entitlements; path = OnePutt/OnePutt.entitlements; sourceTree = "<group>"; };
+		7C68B634253DA89F0090A53F /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = OnePutt/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9CDBCE44B2389E5075D9B993 /* libPods-OnePutt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OnePutt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2485BFF3180B5FA99CCF44A /* Pods-OnePutt-OnePuttTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnePutt-OnePuttTests.release.xcconfig"; path = "Target Support Files/Pods-OnePutt-OnePuttTests/Pods-OnePutt-OnePuttTests.release.xcconfig"; sourceTree = "<group>"; };
-		DE2083ADD5D5B07702379F40 /* libPods-OnePutt-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OnePutt-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEFCD815A53596E6969BD0D9 /* Pods-OnePutt-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnePutt-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-OnePutt-tvOSTests/Pods-OnePutt-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B0CB57C85F5B83B60BDA43AC /* Pods-OnePutt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnePutt.debug.xcconfig"; path = "Target Support Files/Pods-OnePutt/Pods-OnePutt.debug.xcconfig"; sourceTree = "<group>"; };
+		C64170777DF00E31AE1CF228 /* Pods-OnePutt-OnePuttTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnePutt-OnePuttTests.release.xcconfig"; path = "Target Support Files/Pods-OnePutt-OnePuttTests/Pods-OnePutt-OnePuttTests.release.xcconfig"; sourceTree = "<group>"; };
+		E63F80D26F9515DDD7473263 /* libPods-OnePutt-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OnePutt-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EABA37A35D533144A197C9EA /* Pods-OnePutt-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnePutt-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-OnePutt-tvOS/Pods-OnePutt-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		F0879BFF6F9E984890C3A289 /* Pods-OnePutt-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnePutt-tvOS.release.xcconfig"; path = "Target Support Files/Pods-OnePutt-tvOS/Pods-OnePutt-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		F8FA8052933B652E8C0589BE /* Pods-OnePutt-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnePutt-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-OnePutt-tvOSTests/Pods-OnePutt-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		EE9BE851A44F137D1FEE0561 /* libPods-OnePutt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OnePutt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F98D797D123009C9CDB2E0CA /* Pods-OnePutt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnePutt.release.xcconfig"; path = "Target Support Files/Pods-OnePutt/Pods-OnePutt.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69C9A1068EA13142AC007328 /* libPods-OnePutt-OnePuttTests.a in Frameworks */,
+				4329F9615C5EFE4F5A824D9B /* libPods-OnePutt-OnePuttTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +85,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BD7DB4921A6D23EE5E84BFD /* libPods-OnePutt.a in Frameworks */,
+				7C68B635253DA89F0090A53F /* ExternalAccessory.framework in Frameworks */,
+				652267D89AC8967E0BB38183 /* libPods-OnePutt.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D4A66CD47F1565C5E916CD6 /* libPods-OnePutt-tvOS.a in Frameworks */,
+				6034437A7F6EB592DAF5C29C /* libPods-OnePutt-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D915879A4B552041A6E05950 /* libPods-OnePutt-tvOSTests.a in Frameworks */,
+				54C4508CF99A70408E9267A3 /* libPods-OnePutt-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +129,7 @@
 		13B07FAE1A68108700A75B9A /* OnePutt */ = {
 			isa = PBXGroup;
 			children = (
+				7C68B633253DA89E0090A53F /* OnePutt.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -139,12 +144,13 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7C68B634253DA89F0090A53F /* ExternalAccessory.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				9CDBCE44B2389E5075D9B993 /* libPods-OnePutt.a */,
-				63E2253EABCB523C52C33CE3 /* libPods-OnePutt-OnePuttTests.a */,
-				DE2083ADD5D5B07702379F40 /* libPods-OnePutt-tvOS.a */,
-				74464C374A044CE511A4EFA0 /* libPods-OnePutt-tvOSTests.a */,
+				EE9BE851A44F137D1FEE0561 /* libPods-OnePutt.a */,
+				0A30FC3C1FEE42BD76448501 /* libPods-OnePutt-OnePuttTests.a */,
+				608E2EEF8C834E0262272A15 /* libPods-OnePutt-tvOS.a */,
+				E63F80D26F9515DDD7473263 /* libPods-OnePutt-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -152,14 +158,14 @@
 		6BE65F3F216719FC1CCDDABC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				62544B8148A5951CBA69D975 /* Pods-OnePutt.debug.xcconfig */,
-				4390758C9F71946E08F04D45 /* Pods-OnePutt.release.xcconfig */,
-				126BE3CBF892DA18AD2E46F7 /* Pods-OnePutt-OnePuttTests.debug.xcconfig */,
-				D2485BFF3180B5FA99CCF44A /* Pods-OnePutt-OnePuttTests.release.xcconfig */,
-				0F974E271949C5931CE969CF /* Pods-OnePutt-tvOS.debug.xcconfig */,
-				F0879BFF6F9E984890C3A289 /* Pods-OnePutt-tvOS.release.xcconfig */,
-				DEFCD815A53596E6969BD0D9 /* Pods-OnePutt-tvOSTests.debug.xcconfig */,
-				F8FA8052933B652E8C0589BE /* Pods-OnePutt-tvOSTests.release.xcconfig */,
+				B0CB57C85F5B83B60BDA43AC /* Pods-OnePutt.debug.xcconfig */,
+				F98D797D123009C9CDB2E0CA /* Pods-OnePutt.release.xcconfig */,
+				2AAB07E46F880EEE18AC1D39 /* Pods-OnePutt-OnePuttTests.debug.xcconfig */,
+				C64170777DF00E31AE1CF228 /* Pods-OnePutt-OnePuttTests.release.xcconfig */,
+				EABA37A35D533144A197C9EA /* Pods-OnePutt-tvOS.debug.xcconfig */,
+				3675C710C2D7B29802FCB4E9 /* Pods-OnePutt-tvOS.release.xcconfig */,
+				2A155B94DAF3CAE1BDF62ECF /* Pods-OnePutt-tvOSTests.debug.xcconfig */,
+				198EC07AE4D578A2C9C37C05 /* Pods-OnePutt-tvOSTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -204,11 +210,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "OnePuttTests" */;
 			buildPhases = (
-				3ECFB0B255B758AC188CE54D /* [CP] Check Pods Manifest.lock */,
+				500DE6390198BB4CD32902F8 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				0304754FF3F3D0CFABADB740 /* [CP] Copy Pods Resources */,
+				86969E745366083C5F955BC0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -224,13 +230,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "OnePutt" */;
 			buildPhases = (
-				0E20CB7DC4B95AFC03EF62AE /* [CP] Check Pods Manifest.lock */,
+				2C597B039D52280906C2453D /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				F662BA3C0A84CBE859465CC8 /* [CP] Copy Pods Resources */,
+				A7059CBCF1170BD9058D5B37 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,7 +251,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "OnePutt-tvOS" */;
 			buildPhases = (
-				68DD250217DDF6BC51505AE1 /* [CP] Check Pods Manifest.lock */,
+				A8B6816C6D17656BC2B744C9 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -265,7 +271,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "OnePutt-tvOSTests" */;
 			buildPhases = (
-				892577758B6036DD81E897E7 /* [CP] Check Pods Manifest.lock */,
+				10F2243C82E8E775B98DD07D /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -293,7 +299,9 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = AB64NBMTCV;
 						LastSwiftMigration = 1120;
+						ProvisioningStyle = Automatic;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -376,7 +384,87 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		0304754FF3F3D0CFABADB740 /* [CP] Copy Pods Resources */ = {
+		10F2243C82E8E775B98DD07D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OnePutt-tvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C597B039D52280906C2453D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OnePutt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native Code And Images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		500DE6390198BB4CD32902F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OnePutt-OnePuttTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86969E745366083C5F955BC0 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -426,109 +514,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OnePutt-OnePuttTests/Pods-OnePutt-OnePuttTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		0E20CB7DC4B95AFC03EF62AE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-OnePutt-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Bundle React Native Code And Images";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
-		};
-		3ECFB0B255B758AC188CE54D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-OnePutt-OnePuttTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		68DD250217DDF6BC51505AE1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-OnePutt-tvOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		892577758B6036DD81E897E7 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-OnePutt-tvOSTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F662BA3C0A84CBE859465CC8 /* [CP] Copy Pods Resources */ = {
+		A7059CBCF1170BD9058D5B37 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -576,6 +562,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OnePutt/Pods-OnePutt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8B6816C6D17656BC2B744C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OnePutt-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -671,7 +679,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 126BE3CBF892DA18AD2E46F7 /* Pods-OnePutt-OnePuttTests.debug.xcconfig */;
+			baseConfigurationReference = 2AAB07E46F880EEE18AC1D39 /* Pods-OnePutt-OnePuttTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -694,7 +702,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2485BFF3180B5FA99CCF44A /* Pods-OnePutt-OnePuttTests.release.xcconfig */;
+			baseConfigurationReference = C64170777DF00E31AE1CF228 /* Pods-OnePutt-OnePuttTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -714,11 +722,15 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62544B8148A5951CBA69D975 /* Pods-OnePutt.debug.xcconfig */;
+			baseConfigurationReference = B0CB57C85F5B83B60BDA43AC /* Pods-OnePutt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = OnePutt/OnePutt.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AB64NBMTCV;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = OnePutt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -727,8 +739,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.OnePutt;
+				PRODUCT_BUNDLE_IDENTIFIER = org.OnePutt1;
 				PRODUCT_NAME = OnePutt;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -737,11 +750,15 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4390758C9F71946E08F04D45 /* Pods-OnePutt.release.xcconfig */;
+			baseConfigurationReference = F98D797D123009C9CDB2E0CA /* Pods-OnePutt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = OnePutt/OnePutt.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AB64NBMTCV;
 				INFOPLIST_FILE = OnePutt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -749,8 +766,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.OnePutt;
+				PRODUCT_BUNDLE_IDENTIFIER = org.OnePutt1;
 				PRODUCT_NAME = OnePutt;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -758,7 +776,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F974E271949C5931CE969CF /* Pods-OnePutt-tvOS.debug.xcconfig */;
+			baseConfigurationReference = EABA37A35D533144A197C9EA /* Pods-OnePutt-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -786,7 +804,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0879BFF6F9E984890C3A289 /* Pods-OnePutt-tvOS.release.xcconfig */;
+			baseConfigurationReference = 3675C710C2D7B29802FCB4E9 /* Pods-OnePutt-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -814,7 +832,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DEFCD815A53596E6969BD0D9 /* Pods-OnePutt-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 2A155B94DAF3CAE1BDF62ECF /* Pods-OnePutt-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -841,7 +859,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8FA8052933B652E8C0589BE /* Pods-OnePutt-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 198EC07AE4D578A2C9C37C05 /* Pods-OnePutt-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;

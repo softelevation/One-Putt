@@ -6,16 +6,16 @@ import {
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
 import {darkGreenColor, whiteColor} from '../../Common/theme';
-const Report = ({navigation}) => {
+const Help = ({navigation}) => {
   return (
     <>
       <SafeAreaView style={{backgroundColor: darkGreenColor}} />
       <MainView>
         <Top>
-          <HeaderText>Report</HeaderText>
+          <HeaderText>Help</HeaderText>
         </Top>
         <Center>
-          <MainText>Second Phase Activity</MainText>
+          <MainText>Metadata</MainText>
         </Center>
         <Bottom>
           <BackButton activeOpacity={0.2} onPress={() => navigation.goBack()}>
@@ -56,4 +56,4 @@ const BackButtonText = styled.Text({
   color: whiteColor,
   fontSize: 16,
 });
-export default Report;
+export default Help;

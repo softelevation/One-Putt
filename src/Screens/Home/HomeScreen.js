@@ -1,24 +1,20 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {
-  Text,
-  StyleSheet,
   View,
   SafeAreaView,
   ImageBackground,
   FlatList,
   Alert,
-  BackHandler,
-  NativeModules,
 } from 'react-native';
-import {background} from '../../Common/Images';
+import {KandA, Logo, texture} from '../../Common/Images';
 import styled from 'styled-components/native';
-import {whiteColor, yellowColor} from '../../Common/theme';
+import {whiteColor} from '../../Common/theme';
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
 import RNExitApp from 'react-native-exit-app';
-
+import ResponsiveImage from 'react-native-responsive-image';
 const HomeScreen = ({navigation}) => {
   const dialog = () => {
     Alert.alert(
@@ -38,10 +34,13 @@ const HomeScreen = ({navigation}) => {
   };
   const data = [
     {
+      name: 'Play',
+    },
+    {
       name: 'Practice',
     },
     {
-      name: 'Play',
+      name: 'Player',
     },
     {
       name: 'About',
@@ -56,71 +55,98 @@ const HomeScreen = ({navigation}) => {
       name: 'Report',
     },
     {
-      name: 'Player',
+      name: 'Help',
     },
     {
       name: 'Shutdown',
     },
   ];
+
   return (
-    <Background source={background}>
+    <Background>
       <SafeAreaView />
-      <HeaderView>
-        <HeaderText>
-          One-<SecondHeaderText>Putt</SecondHeaderText>
-        </HeaderText>
+      <HeaderView source={texture}>
+        <ResponsiveImage source={Logo} initHeight="100" initWidth="160" />
+        <HeaderText>The Art of Putting</HeaderText>
       </HeaderView>
-      <FlatList
-        numColumns={2}
-        data={data}
-        keyExtractor={(item, index) => index}
-        renderItem={({item, index}) => {
-          return (
-            <BoxView
-              onPress={() =>
-                item.name === 'Shutdown'
-                  ? dialog()
-                  : navigation.navigate(item.name)
-              }
-              key={index}>
-              <BoxText>{item.name}</BoxText>
-            </BoxView>
-          );
-        }}
-      />
+      <WelcomeText>Welcome</WelcomeText>
+      <View>
+        <FlatList
+          numColumns={3}
+          data={data}
+          keyExtractor={(item, index) => index}
+          renderItem={({item, index}) => {
+            return (
+              <BoxView
+                onPress={() =>
+                  item.name === 'Shutdown'
+                    ? dialog()
+                    : navigation.navigate(item.name)
+                }
+                key={index}>
+                <BoxText>{item.name}</BoxText>
+              </BoxView>
+            );
+          }}
+        />
+      </View>
+      <Divider />
+      <Row>
+        <ResponsiveImage source={KandA} initHeight="60" initWidth="190" />
+        <BoxText>Follow Us</BoxText>
+      </Row>
     </Background>
   );
 };
 
-const Background = styled(ImageBackground)({
+const Background = styled.View({
   flex: 1,
+  backgroundColor: '#000E58',
 });
-const HeaderView = styled.View({
+const HeaderView = styled(ImageBackground)({
   alignItems: 'center',
+  paddingVertical: hp(4),
+});
+const Row = styled.View({
+  alignItems: 'center',
+  flexDirection: 'row',
+  justifyContent: 'space-between',
+  marginHorizontal: wp(3),
+  marginTop: hp(4),
 });
 const HeaderText = styled.Text({
-  fontSize: 40,
+  fontSize: 20,
   color: whiteColor,
 });
-const SecondHeaderText = styled.Text({
-  fontSize: 40,
-  color: yellowColor,
-});
 const BoxView = styled.TouchableOpacity({
-  borderWidth: 2,
   borderRadius: 20,
-  width: wp(40),
-  paddingVertical: hp(1),
+  width: wp(30),
+  paddingVertical: hp(5),
   justifyContent: 'center',
   alignItems: 'center',
-  marginLeft: wp(7),
-  marginVertical: hp(3),
-  borderColor: whiteColor,
+  marginLeft: wp(2.5),
+  marginTop: hp(2),
+  backgroundColor: '#193f8f',
 });
 const BoxText = styled.Text({
   color: whiteColor,
   fontSize: 16,
   fontWeight: 'bold',
   textTransform: 'uppercase',
+});
+const WelcomeText = styled.Text({
+  color: whiteColor,
+  fontSize: 30,
+  fontWeight: 'bold',
+  textTransform: 'uppercase',
+  textAlign: 'center',
+  marginTop: hp(2),
+});
+const Divider = styled.View({
+  marginTop: hp(3),
+  width: wp(90),
+  alignSelf: 'center',
+  borderBottomWidth: 1,
+  borderBottomColor: '#ffffff',
 });
 export default HomeScreen;

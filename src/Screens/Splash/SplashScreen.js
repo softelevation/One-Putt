@@ -1,6 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, {useEffect} from 'react';
-import {Text, StyleSheet, View} from 'react-native';
 import styled from 'styled-components/native';
 import {blackColor, whiteColor} from '../../Common/theme';
 import {useNavigation} from '@react-navigation/native';
@@ -11,7 +10,7 @@ const SplashScreen = () => {
     setTimeout(() => {
       navigation.reset({
         index: 0,
-        routes: [{name: 'Home'}],
+        routes: [{name: 'QrCode'}],
       });
     }, 3000);
   }, []);

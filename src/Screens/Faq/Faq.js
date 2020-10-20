@@ -1,18 +1,12 @@
-import React, {Component} from 'react';
-import {
-  Text,
-  StyleSheet,
-  View,
-  SafeAreaView,
-  TouchableOpacity,
-} from 'react-native';
+import React from 'react';
+import {SafeAreaView} from 'react-native';
 import styled from 'styled-components/native';
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
 import {darkGreenColor, whiteColor} from '../../Common/theme';
-import {Content, Accordion, Icon} from 'native-base';
+import {Content, Accordion} from 'native-base';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import ResponsiveImage from 'react-native-responsive-image';
 import {expand_down, expand_up} from '../../Common/Images';

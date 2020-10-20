@@ -1,11 +1,5 @@
-import React, {Component} from 'react';
-import {
-  Text,
-  StyleSheet,
-  View,
-  SafeAreaView,
-  TouchableOpacity,
-} from 'react-native';
+import React from 'react';
+import {SafeAreaView} from 'react-native';
 import styled from 'styled-components/native';
 import {
   widthPercentageToDP as wp,
@@ -40,7 +34,6 @@ const Player = ({navigation}) => {
             <MainText>Metadata</MainText>
           </Center>
         </Top>
-
         <Bottom>
           <BackButton activeOpacity={0.2} onPress={() => navigation.goBack()}>
             <BackButtonText>Back</BackButtonText>

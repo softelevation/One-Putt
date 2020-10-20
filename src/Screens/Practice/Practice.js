@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {useState, useEffect} from 'react';
-import {View, SafeAreaView} from 'react-native';
+import {View, SafeAreaView, TouchableOpacity} from 'react-native';
 import styled from 'styled-components/native';
 import {
   widthPercentageToDP as wp,
@@ -9,9 +9,8 @@ import {
 import {darkGreenColor, whiteColor, backgroundColor} from '../../Common/theme';
 import Slider from '@react-native-community/slider';
 import {rectangle} from '../../Common/Images';
-import useSocket from 'use-socket.io-client';
-// import client, {config} from '../../utils/socket';
 import TcpSocket from 'react-native-tcp-socket';
+import ResponsiveImage from 'react-native-responsive-image';
 const Practice = ({navigation}) => {
   // const [socket] = useSocket(config);
   const [LRValue, setLRValue] = useState(0);
@@ -131,11 +130,29 @@ const Practice = ({navigation}) => {
       <SafeAreaView style={{backgroundColor: darkGreenColor}} />
       <MainView>
         <Top>
-          <HeaderText>Practice</HeaderText>
+          <View
+            style={{
+              flexDirection: 'row',
+              justifyContent: 'space-between',
+              paddingHorizontal: wp(3),
+              marginTop: hp(1),
+              alignItems: 'center',
+            }}>
+            <TouchableOpacity onPress={() => navigation.goBack()}>
+              <ResponsiveImage
+                source={require('../../assets/back-arrow.png')}
+                initHeight="30"
+                initWidth="30"
+                style={{tintColor: darkGreenColor}}
+              />
+            </TouchableOpacity>
+            <HeaderText>Practice</HeaderText>
+            <HeaderText />
+          </View>
           <ButtonTilted>
             <ButtonTiltedText>{'You are tilted : 0\u00b0'}</ButtonTiltedText>
           </ButtonTilted>
-          <HeaderText style={{fontSize: 18}}>Status : {status} </HeaderText>
+          {/* <HeaderText style={{fontSize: 18}}>Status : {status} </HeaderText> */}
         </Top>
         <Center>
           <SliderContainerView>
