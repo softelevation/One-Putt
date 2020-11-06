@@ -10,7 +10,7 @@ const SplashScreen = () => {
     setTimeout(() => {
       navigation.reset({
         index: 0,
-        routes: [{name: 'QrCode'}],
+        routes: [{name: 'Home'}],
       });
     }, 3000);
   }, []);

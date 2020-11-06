@@ -46,7 +46,7 @@
 	<key>NSCalendarsUsageDescription</key>
 	<string>$(PRODUCT_NAME) uses the device camera</string>
 	<key>NSCameraUsageDescription</key>
-	<string>YOUR TEXT</string>
+	<string>$(PRODUCT_NAME) would you like to use your camera</string>
 	<key>NSContactsUsageDescription</key>
 	<string>YOUR TEXT</string>
 	<key>NSFaceIDUsageDescription</key>

@@ -1,9 +1,11 @@
 import React, {useState, useRef} from 'react';
 
 import {
+  Alert,
   Dimensions,
   Linking,
   PermissionsAndroid,
+  Platform,
   StyleSheet,
   Text,
   TouchableOpacity,
@@ -17,11 +19,9 @@ import RNAndroidLocationEnabler from 'react-native-android-location-enabler';
 import {heightPercentageToDP} from 'react-native-responsive-screen';
 import {View} from 'native-base';
 
-const SCREEN_HEIGHT = Dimensions.get('window').height;
 const SCREEN_WIDTH = Dimensions.get('window').width;
 const QrCode = ({navigation}) => {
   const qrscan = useRef();
-  const [status, setStatus] = useState('Scanning');
   const onSuccess = (e) => {
     const code = e.data;
     const codes = code.split('-').filter((c) => c !== '');
@@ -32,53 +32,70 @@ const QrCode = ({navigation}) => {
       codes[1].substr(codes[1].length - 6, 2) +
       codes[1].substr(codes[1].length - 8, 2) +
       codes[1].substr(0, 4);
-    console.log(password, 'password', ssid);
-    console.log(e);
+    console.log('password', code);
     wifiConnect(password, ssid);
   };
 
   const wifiConnect = async (password, ssid) => {
-    WifiManager.setEnabled(true);
-    WifiManager.disconnect();
-    PermissionsAndroid.request(
-      PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
-      {
-        title: '',
-        message: '',
-        buttonNegative: '',
-        buttonPositive: '',
-      },
-    ).then((granted) => {
-      if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-        RNAndroidLocationEnabler.promptForEnableLocationIfNeeded({
-          interval: 10000,
-          fastInterval: 5000,
-        })
-          .then((data) => {
-            WifiManager.connectToProtectedSSID(ssid, password, false).then(
-              () => {
-                console.log('connectToProtectedSSID successfully!');
-                setStatus('Connected');
-                setTimeout(() => {
-                  navigation.navigate('Home');
-                }, 2000);
-              },
-              (reason) => {
-                setStatus('Connection failed');
-                console.log(reason);
-              },
-            );
+    if (Platform.OS === 'android') {
+      console.log('android');
+      WifiManager.setEnabled(true);
+      WifiManager.disconnect();
+      PermissionsAndroid.request(
+        PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
+        {
+          title: '',
+          message: '',
+          buttonNegative: '',
+          buttonPositive: '',
+        },
+      ).then((granted) => {
+        if (granted === PermissionsAndroid.RESULTS.GRANTED) {
+          RNAndroidLocationEnabler.promptForEnableLocationIfNeeded({
+            interval: 10000,
+            fastInterval: 5000,
           })
-          .catch((err) => {
-            console.log(err);
-          });
-      } else {
-        console.log('permission denied');
-      }
-    });
+            .then((data) => {
+              WifiManager.connectToProtectedSSID(ssid, password, false).then(
+                () => {
+                  console.log('connectToProtectedSSID successfully!');
+                  Alert.alert('Connected');
+                  setTimeout(() => {
+                    navigation.navigate('Home');
+                  }, 2000);
+                },
+                (reason) => {
+                  Alert.alert('Connection failed');
+                  console.log(reason);
+                },
+              );
+            })
+            .catch((err) => {
+              console.log(err);
+            });
+        } else {
+          Alert.alert('permission denied');
+        }
+      });
+    } else {
+      console.log('ios');
+      WifiManager.connectToProtectedSSID(ssid, password, false).then(
+        () => {
+          console.log('connectToProtectedSSID successfully!');
+          Alert.alert('Connected');
+          setTimeout(() => {
+            navigation.navigate('Home');
+          }, 2000);
+        },
+        (reason) => {
+          Alert.alert('Connection failed');
+          console.log(reason);
+        },
+      );
+    }
   };
   const scanAgain = () => {
-    setStatus('Scanning');
+    Alert.alert('Scan Again');
     qrscan.current.reactivate();
   };
   const renderFailedView = () => {
@@ -107,14 +124,11 @@ const QrCode = ({navigation}) => {
         onRead={(e) => onSuccess(e)}
         notAuthorizedView={renderFailedView()}
         flashMode={RNCamera.Constants.FlashMode.off}
-        topContent={
-          <Text style={styles.centerText}>Wifi Status : {status}</Text>
-        }
         showMarker
         customMarker={
           <View style={styles.rectangleContainer}>
             <View style={styles.topOverlay}>
-              <Text style={{fontSize: 30, color: 'white'}}>
+              <Text style={{fontSize: 30, color: '#ffffff'}}>
                 Scanning Wifi Network
               </Text>
             </View>
