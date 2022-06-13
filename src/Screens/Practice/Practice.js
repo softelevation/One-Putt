@@ -22,7 +22,6 @@ const Practice = ({navigation}) => {
   const [topDownValue, settopDownValue] = useState('0deg');
   const [command, setCommand] = useState('');
   const [socket, setSocket] = useState({});
-
   const changeValueTopDown = (e) => {
     setBTValue(e);
     settopDownValue(e * 5 + 'deg');
@@ -78,6 +77,14 @@ const Practice = ({navigation}) => {
       setHorizontalTiltAngle('3FC0');
     } else if (LRValue === 2.0) {
       setHorizontalTiltAngle('4000');
+    } else if (LRValue === 2.5) {
+      setHorizontalTiltAngle('4020');
+    } else if (LRValue === 3.0) {
+      setHorizontalTiltAngle('4040');
+    } else if (LRValue === 3.5) {
+      setHorizontalTiltAngle('4060');
+    } else if (LRValue === 4.0) {
+      setHorizontalTiltAngle('4080');
     } else if (LRValue === -0.5) {
       setHorizontalTiltAngle('BF00');
     } else if (LRValue === -1.0) {
@@ -86,6 +93,14 @@ const Practice = ({navigation}) => {
       setHorizontalTiltAngle('BFC0');
     } else if (LRValue === -2.0) {
       setHorizontalTiltAngle('C000');
+    } else if (LRValue === -2.5) {
+      setHorizontalTiltAngle('C020');
+    } else if (LRValue === -3.0) {
+      setHorizontalTiltAngle('C040');
+    } else if (LRValue === -3.5) {
+      setHorizontalTiltAngle('C060');
+    } else if (LRValue === -4.0) {
+      setHorizontalTiltAngle('C080');
     }
   }, [LRValue, BTValue]);
   // const ws = new WebSocket('http://192.168.1.100:8080');
@@ -100,8 +115,12 @@ const Practice = ({navigation}) => {
       '7FFF7FFF7FFF7FFF7FFF7FFF';
     const total = cmd + cmd1;
     setCommand(total);
-    socket.write(total);
+    if (socket && !socket._destroyed) {
+      console.log('submitted');
+      socket.write(total);
+    }
   };
+
   useEffect(() => {
     const client = TcpSocket.createConnection(
       {
@@ -111,17 +130,21 @@ const Practice = ({navigation}) => {
       },
       () => {
         setStatus('Connected');
+        client.destroy();
       },
     );
     client.on('data', function (data) {
       console.log('message was received', data);
     });
     client.on('error', function (error) {
+      console.log('error: ', error);
       setStatus('Failed to connect');
     });
-    client.on('close', function () {
+    client.on('close', function (w) {
+      console.log('w: ', w);
       setStatus('Disconnected');
     });
+
     setSocket(client);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
